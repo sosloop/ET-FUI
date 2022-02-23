@@ -5,8 +5,8 @@ namespace ET
         protected override async ETTask Run(EventType.AfterCreateCurrentScene args)
         {
             Scene currentScene = args.CurrentScene;
-            currentScene.AddComponent<UIComponent>();
-            currentScene.AddComponent<ResourcesLoaderComponent>();
+            currentScene.AddComponent<FGUIComponent>();
+            currentScene.AddComponent<FGUIEventComponent>();
             await ETTask.CompletedTask;
         }
     }

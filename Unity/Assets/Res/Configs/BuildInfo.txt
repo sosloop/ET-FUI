@@ -1,0 +1,8 @@
+{
+  "CheckVersionUrl": "http://127.0.0.1/{0}Version.txt",
+  "WindowsAppUrl": "http://www.baidu.com",
+  "MacOSAppUrl": "http://www.baidu.com",
+  "IOSAppUrl": "http://www.baidu.com",
+  "AndroidAppUrl": "http://www.baidu.com",
+  "END_OF_JSON": ""
+}

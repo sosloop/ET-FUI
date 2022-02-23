@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="fnfxb0ke">
+  <resources>
+    <component id="o9870" name="LoginForm.xml" path="/" exported="true"/>
+    <component id="o9871" name="InputText.xml" path="/"/>
+    <component id="o9872" name="ButtonText.xml" path="/"/>
+    <component id="o9873" name="HallForm.xml" path="/" exported="true"/>
+    <component id="pqy84" name="GameForm.xml" path="/" exported="true"/>
+    <image id="dvgp5" name="tt11.jpeg" path="/res/"/>
+  </resources>
+  <publish name="" path="D:\unitystudy\ET-FUI\Unity\Assets\Res\FGUI" packageCount="2" codePath="D:\unitystudy\ET-FUI\Unity\Codes"/>
+</packageDescription>

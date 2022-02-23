@@ -3,24 +3,38 @@ using UnityEngine;
 
 namespace ET
 {
-    [UIEvent(UIType.UILobby)]
-    public class UILobbyEvent: AUIEvent
+    [AFGUIEvent(UI_HallForm.UIResName)]
+    public class UILobbyEvent: IAFGUIEventHandler
     {
-        public override async ETTask<UI> OnCreate(UIComponent uiComponent, UILayer uiLayer)
+        public void OnInitWindowCoreData(FGUIBaseWindow uiBaseWindow)
         {
-            await ETTask.CompletedTask;
-            await uiComponent.Domain.GetComponent<ResourcesLoaderComponent>().LoadAsync(UIType.UILobby.StringToAB());
-            GameObject bundleGameObject = (GameObject) ResourcesComponent.Instance.GetAsset(UIType.UILobby.StringToAB(), UIType.UILobby);
-            GameObject gameObject = UnityEngine.Object.Instantiate(bundleGameObject, UIEventComponent.Instance.UILayers[(int)uiLayer]);
-            UI ui = uiComponent.AddChild<UI, string, GameObject>(UIType.UILobby, gameObject);
-
-            ui.AddComponent<UILobbyComponent>();
-            return ui;
+            
         }
 
-        public override void OnRemove(UIComponent uiComponent)
+        public void OnInitComponent(FGUIBaseWindow uiBaseWindow)
         {
-            ResourcesComponent.Instance.UnloadBundle(UIType.UILobby.StringToAB());
+            uiBaseWindow.AddComponent<UI_HallForm>(); 
+            uiBaseWindow.AddComponent<UILobbyComponent>(); 
+        }
+
+        public void OnRegisterUIEvent(FGUIBaseWindow uiBaseWindow)
+        {
+            uiBaseWindow.GetComponent<UILobbyComponent>().RegisterUIEvent(); 
+        }
+
+        public void OnShowWindow(FGUIBaseWindow uiBaseWindow, Entity contextData = null)
+        {
+            uiBaseWindow.GetComponent<UILobbyComponent>().ShowWindow(contextData); 
+        }
+
+        public void OnHideWindow(FGUIBaseWindow uiBaseWindow)
+        {
+            
+        }
+
+        public void BeforeUnload(FGUIBaseWindow uiBaseWindow)
+        {
+            
         }
     }
 }

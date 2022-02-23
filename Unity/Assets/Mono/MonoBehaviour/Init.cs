@@ -17,7 +17,7 @@ namespace ET
 		
 		private void Awake()
 		{
-#if ENABLE_IL2CPP
+#if ILRuntime
 			this.CodeMode = CodeMode.ILRuntime;
 #endif
 			
@@ -41,7 +41,7 @@ namespace ET
 
 		private void Start()
 		{
-			CodeLoader.Instance.Start();
+			// CodeLoader.Instance.Start();
 		}
 
 		private void Update()

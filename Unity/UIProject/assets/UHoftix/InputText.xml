@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="800,80">
+  <displayList>
+    <graph id="n3_o987" name="n3" xy="0,0" size="800,80" type="rect" fillColor="#ff999999"/>
+    <text id="n2_o987" name="IText" xy="0,0" size="800,80" fontSize="60" color="#ffffff" autoSize="none" singleLine="true" text="" input="true" prompt="点此输入" maxLength="10"/>
+  </displayList>
+</component>

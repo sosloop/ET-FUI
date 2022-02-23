@@ -8,8 +8,6 @@ namespace ET
 {
 	public class UILoginComponent: Entity, IAwake
 	{
-		public GameObject account;
-		public GameObject password;
-		public GameObject loginBtn;
+		public UI_LoginForm View { get => this.Parent.GetComponent<UI_LoginForm>();} 
 	}
 }

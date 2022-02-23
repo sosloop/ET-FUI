@@ -12,7 +12,7 @@ namespace ET
 {
     public static class BuildAssemblieEditor
     {
-        private const string CodeDir = "Assets/Bundles/Code/";
+        private const string CodeDir = "Assets/Res/HotfixDll/";
 
         [MenuItem("Tools/BuildCodeDebug _F5")]
         public static void BuildCodeDebug()
@@ -172,12 +172,12 @@ namespace ET
             Debug.Log("copy Code.dll to Bundles/Code success!");
             
             // 设置ab包
-            AssetImporter assetImporter1 = AssetImporter.GetAtPath("Assets/Bundles/Code/Code.dll.bytes");
-            assetImporter1.assetBundleName = "Code.unity3d";
-            AssetImporter assetImporter2 = AssetImporter.GetAtPath("Assets/Bundles/Code/Code.pdb.bytes");
-            assetImporter2.assetBundleName = "Code.unity3d";
+            // AssetImporter assetImporter1 = AssetImporter.GetAtPath("Assets/Bundles/Code/Code.dll.bytes");
+            // assetImporter1.assetBundleName = "Code.unity3d";
+            // AssetImporter assetImporter2 = AssetImporter.GetAtPath("Assets/Bundles/Code/Code.pdb.bytes");
+            // assetImporter2.assetBundleName = "Code.unity3d";
             AssetDatabase.Refresh();
-            Debug.Log("set assetbundle success!");
+            // Debug.Log("set assetbundle success!");
             
             Debug.Log("build success!");
         }

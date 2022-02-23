@@ -3,22 +3,38 @@ using UnityEngine;
 
 namespace ET
 {
-    [UIEvent(UIType.UILogin)]
-    public class UILoginEvent: AUIEvent
+    [AFGUIEvent(UI_LoginForm.UIResName)]
+    public class UILoginEvent: IAFGUIEventHandler
     {
-        public override async ETTask<UI> OnCreate(UIComponent uiComponent, UILayer uiLayer)
+        public void OnInitWindowCoreData(FGUIBaseWindow uiBaseWindow)
         {
-            await uiComponent.Domain.GetComponent<ResourcesLoaderComponent>().LoadAsync(UIType.UILogin.StringToAB());
-            GameObject bundleGameObject = (GameObject) ResourcesComponent.Instance.GetAsset(UIType.UILogin.StringToAB(), UIType.UILogin);
-            GameObject gameObject = UnityEngine.Object.Instantiate(bundleGameObject, UIEventComponent.Instance.UILayers[(int)uiLayer]);
-            UI ui = uiComponent.AddChild<UI, string, GameObject>(UIType.UILogin, gameObject);
-            ui.AddComponent<UILoginComponent>();
-            return ui;
+            
         }
 
-        public override void OnRemove(UIComponent uiComponent)
+        public void OnInitComponent(FGUIBaseWindow uiBaseWindow)
         {
-            ResourcesComponent.Instance.UnloadBundle(UIType.UILogin.StringToAB());
+            uiBaseWindow.AddComponent<UI_LoginForm>(); 
+            uiBaseWindow.AddComponent<UILoginComponent>(); 
+        }
+
+        public void OnRegisterUIEvent(FGUIBaseWindow uiBaseWindow)
+        {
+            uiBaseWindow.GetComponent<UILoginComponent>().RegisterUIEvent(); 
+        }
+
+        public void OnShowWindow(FGUIBaseWindow uiBaseWindow, Entity contextData = null)
+        {
+            uiBaseWindow.GetComponent<UILoginComponent>().ShowWindow(contextData); 
+        }
+
+        public void OnHideWindow(FGUIBaseWindow uiBaseWindow)
+        {
+            
+        }
+
+        public void BeforeUnload(FGUIBaseWindow uiBaseWindow)
+        {
+            
         }
     }
 }

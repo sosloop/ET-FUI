@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1280,720">
+  <displayList>
+    <component id="n5_o987" name="LoginBtn" src="o9872" fileName="ButtonText.xml" xy="952,608" size="300,80">
+      <Button title="退出游戏" titleColor="#000099" titleFontSize="60"/>
+    </component>
+  </displayList>
+</component>

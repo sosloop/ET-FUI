@@ -4,6 +4,8 @@ using System.IO;
 using System.Reflection;
 using UnityEngine;
 using System.Linq;
+using UGFExtensions;
+using UGFExtensions.Await;
 
 namespace ET
 {
@@ -32,15 +34,16 @@ namespace ET
 			this.appDomain?.Dispose();
 		}
 		
-		public void Start()
+		public async ETTask Start()
 		{
 			switch (this.CodeMode)
 			{
 				case CodeMode.Mono:
 				{
-					Dictionary<string, UnityEngine.Object> dictionary = AssetsBundleHelper.LoadBundle("code.unity3d");
-					byte[] assBytes = ((TextAsset)dictionary["Code.dll"]).bytes;
-					byte[] pdbBytes = ((TextAsset)dictionary["Code.pdb"]).bytes;
+					var ass = await GameEntry.Resource.LoadAssetAsync<TextAsset>(AssetUtility.GetHotfixDLLAsset("Code.dll"));
+					var pdb = await GameEntry.Resource.LoadAssetAsync<TextAsset>(AssetUtility.GetHotfixDLLAsset("Code.pdb"));
+					byte[] assBytes = ass.bytes;
+					byte[] pdbBytes = pdb.bytes;
 					
 					assembly = Assembly.Load(assBytes, pdbBytes);
 					this.allTypes = assembly.GetTypes();
@@ -50,13 +53,11 @@ namespace ET
 				}
 				case CodeMode.ILRuntime:
 				{
-					Dictionary<string, UnityEngine.Object> dictionary = AssetsBundleHelper.LoadBundle("code.unity3d");
-					byte[] assBytes = ((TextAsset)dictionary["Code.dll"]).bytes;
-					byte[] pdbBytes = ((TextAsset)dictionary["Code.pdb"]).bytes;
+					var ass = await GameEntry.Resource.LoadAssetAsync<TextAsset>(AssetUtility.GetHotfixDLLAsset("Code.dll"));
+					var pdb = await GameEntry.Resource.LoadAssetAsync<TextAsset>(AssetUtility.GetHotfixDLLAsset("Code.pdb"));
+					byte[] assBytes = ass.bytes;
+					byte[] pdbBytes = pdb.bytes;
 					
-					//byte[] assBytes = File.ReadAllBytes(Path.Combine("../Unity/", Define.BuildOutputDir, "Code.dll"));
-					//byte[] pdbBytes = File.ReadAllBytes(Path.Combine("../Unity/", Define.BuildOutputDir, "Code.pdb"));
-				
 					appDomain = new ILRuntime.Runtime.Enviorment.AppDomain();
 #if DEBUG && (UNITY_EDITOR || UNITY_ANDROID || UNITY_IPHONE)
 					this.appDomain.UnityMainThreadID = System.Threading.Thread.CurrentThread.ManagedThreadId;

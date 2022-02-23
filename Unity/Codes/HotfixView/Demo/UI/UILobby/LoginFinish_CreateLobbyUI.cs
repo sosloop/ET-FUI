@@ -6,7 +6,7 @@ namespace ET
 	{
 		protected override async ETTask Run(EventType.LoginFinish args)
 		{
-			await UIHelper.Create(args.ZoneScene, UIType.UILobby, UILayer.Mid);
+			await args.ZoneScene.GetComponent<FGUIComponent>().ShowWindowAsync(UI_HallForm.UIPackageName,UI_HallForm.UIResName);
 		}
 	}
 }

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <ResourceCollection>
+    <Resources>
+      <Resource Name="Res/Configs" LoadType="0" Packed="True" />
+      <Resource Name="Res/DataTables/Aircraft" LoadType="0" Packed="True" />
+      <Resource Name="Res/DataTables/Hotfix/AIConfigCategory" LoadType="0" Packed="True" />
+      <Resource Name="Res/DataTables/Hotfix/StartMachineConfigCategory" LoadType="0" Packed="True" />
+      <Resource Name="Res/DataTables/Hotfix/StartProcessConfigCategory" LoadType="0" Packed="True" />
+      <Resource Name="Res/DataTables/Hotfix/StartSceneConfigCategory" LoadType="0" Packed="True" />
+      <Resource Name="Res/DataTables/Hotfix/StartZoneConfigCategory" LoadType="0" Packed="True" />
+      <Resource Name="Res/DataTables/Hotfix/UnitConfigCategory" LoadType="0" Packed="True" />
+      <Resource Name="Res/Entities" LoadType="0" Packed="True" />
+      <Resource Name="Res/FGUI" LoadType="0" Packed="True" />
+      <Resource Name="Res/Fonts" LoadType="0" Packed="True" />
+      <Resource Name="Res/HotfixDll" LoadType="0" Packed="True" />
+      <Resource Name="Res/Materials" LoadType="0" Packed="True" />
+      <Resource Name="Res/Meshes" LoadType="0" Packed="True" />
+      <Resource Name="Res/Music" LoadType="0" Packed="True" />
+      <Resource Name="Res/Scenes" LoadType="0" Packed="True" />
+      <Resource Name="Res/Sounds" LoadType="0" Packed="True" />
+      <Resource Name="Res/Textures" LoadType="0" Packed="True" />
+      <Resource Name="Res/UISounds" LoadType="0" Packed="True" />
+      <Resource Name="Res/Unit" LoadType="0" Packed="True" />
+    </Resources>
+    <Assets>
+      <Asset Guid="064123f1e5067b249a9fd8967ddbde09" ResourceName="Res/Scenes" />
+      <Asset Guid="15311462c5cca74459b1865546437475" ResourceName="Res/Entities" />
+      <Asset Guid="172062b3ecae7f14590a3ec5faaf92f1" ResourceName="Res/Fonts" />
+      <Asset Guid="188f1042b5ff4644389fad5df1f98d7c" ResourceName="Res/Unit" />
+      <Asset Guid="1e768688017709245aed3bb86453c364" ResourceName="Res/Unit" />
+      <Asset Guid="2fa19ae42987f06488a9e76560688c77" ResourceName="Res/FGUI" />
+      <Asset Guid="3dc7455402dfa462b89a4bbd513955e9" ResourceName="Res/Sounds" />
+      <Asset Guid="44c8db52241385c45bbb14a1718f17bf" ResourceName="Res/Configs" />
+      <Asset Guid="580d1035ceb45ab449e21a22eec14c08" ResourceName="Res/FGUI" />
+      <Asset Guid="595f7cae6f82a6146b20ca287fe7c859" ResourceName="Res/Unit" />
+      <Asset Guid="5a35c5f0a89b9654d897ccd7c8f81bd0" ResourceName="Res/Unit" />
+      <Asset Guid="638ff8ae4a0d15047839cd265d3bc296" ResourceName="Res/Music" />
+      <Asset Guid="63fe6ff9ab9e1433f8db4ebd940f2442" ResourceName="Res/Materials" />
+      <Asset Guid="6e0b4a05932877a4b89fb3fb32c3e72b" ResourceName="Res/Unit" />
+      <Asset Guid="6e3730451fa077346abd4ac642ea71d8" ResourceName="Res/Textures" />
+      <Asset Guid="6f61bc53c41ba664fa527d3386ecfd1e" ResourceName="Res/Unit" />
+      <Asset Guid="78b9cd80f7a437546b900aa20ce78495" ResourceName="Res/DataTables/Hotfix/StartProcessConfigCategory" />
+      <Asset Guid="7976506658c16be43abef26ad2cabc50" ResourceName="Res/HotfixDll" />
+      <Asset Guid="7fd11dc5d29076d469d414dec2818f11" ResourceName="Res/Configs" />
+      <Asset Guid="81d4af5a5190e3d4d88c97161d881bf3" ResourceName="Res/Unit" />
+      <Asset Guid="85d0968bbbd51a74e9dfdbee20e48bac" ResourceName="Res/DataTables/Hotfix/UnitConfigCategory" />
+      <Asset Guid="943f3c476130c4f4f8ae55ef3ccd38ba" ResourceName="Res/Unit" />
+      <Asset Guid="96754590a21b5ec46b402ae63fada8e7" ResourceName="Res/DataTables/Hotfix/StartZoneConfigCategory" />
+      <Asset Guid="9e27b0bdab1ad7242a009899d15c0e67" ResourceName="Res/Unit" />
+      <Asset Guid="9eb88d5e2a9345d449fd1c420288dcc6" ResourceName="Res/HotfixDll" />
+      <Asset Guid="a5294483f20f40d449699101bb428cda" ResourceName="Res/Scenes" />
+      <Asset Guid="a5ea117a2b123564a83a2dbd1c9ea4cf" ResourceName="Res/Unit" />
+      <Asset Guid="a749f4485b342b7469956010abf2ab25" ResourceName="Res/Unit" />
+      <Asset Guid="b1494958bf9856a479bec1767c02878e" ResourceName="Res/Unit" />
+      <Asset Guid="baedbbad82997f445a8cb4da210404e0" ResourceName="Res/Meshes" />
+      <Asset Guid="c638f46a32bceec489c606914b597203" ResourceName="Res/DataTables/Hotfix/StartSceneConfigCategory" />
+      <Asset Guid="c7d1e11dd37634b48a9dd4012b8e4306" ResourceName="Res/UISounds" />
+      <Asset Guid="ca65f1ce888a6ed41b7e269e412cecc9" ResourceName="Res/DataTables/Aircraft" />
+      <Asset Guid="d1081d0901e849c44ac6685391a97387" ResourceName="Res/DataTables/Hotfix/StartMachineConfigCategory" />
+      <Asset Guid="ddf31bc14693f4845af1f8b7808d0146" ResourceName="Res/FGUI" />
+      <Asset Guid="dfc15c633f0d98141920018f79a042a6" ResourceName="Res/Unit" />
+      <Asset Guid="ed14df0368fe53543907335c0e3902c6" ResourceName="Res/Unit" />
+      <Asset Guid="f2d09a09c89a2974f96c33f2a2b59df4" ResourceName="Res/DataTables/Hotfix/AIConfigCategory" />
+      <Asset Guid="f57ee821486cd7b488adf1063a8dd207" ResourceName="Res/Unit" />
+    </Assets>
+  </ResourceCollection>
+</UnityGameFramework>

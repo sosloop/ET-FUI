@@ -42,7 +42,11 @@ namespace ET
             list.Add(typeof(ListComponent<Vector3>));
             
             // 注册重定向函数
-
+            
+            // fgui
+            
+            appdomain.DelegateManager.RegisterMethodDelegate<FairyGUI.GObject>();
+            
             // 注册委托
             appdomain.DelegateManager.RegisterMethodDelegate<List<object>>();
             appdomain.DelegateManager.RegisterMethodDelegate<object>();
@@ -68,6 +72,22 @@ namespace ET
             appdomain.DelegateManager.RegisterFunctionDelegate<int, int, int>();//Linq
             appdomain.DelegateManager.RegisterFunctionDelegate<KeyValuePair<int, List<int>>, bool>();
             appdomain.DelegateManager.RegisterFunctionDelegate<KeyValuePair<int, int>, KeyValuePair<int, int>, int>();
+            
+            // fgui
+            appdomain.DelegateManager.RegisterDelegateConvertor<FairyGUI.UIPackage.CreateObjectCallback>((act) =>
+            {
+                return new FairyGUI.UIPackage.CreateObjectCallback((result) =>
+                {
+                    ((Action<FairyGUI.GObject>)act)(result);
+                });
+            });
+            appdomain.DelegateManager.RegisterDelegateConvertor<FairyGUI.EventCallback0>((act) =>
+            {
+                return new FairyGUI.EventCallback0(() =>
+                {
+                    ((Action)act)();
+                });
+            });
             
             appdomain.DelegateManager.RegisterDelegateConvertor<UnityEngine.Events.UnityAction>((act) =>
             {

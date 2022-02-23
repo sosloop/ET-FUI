@@ -50,7 +50,7 @@ namespace ET
 
         private static readonly byte[] logBuffer = new byte[1024];
 
-#if ENABLE_IL2CPP
+#if ILRuntime
 		[AOT.MonoPInvokeCallback(typeof(KcpOutput))]
 #endif
         private static void KcpLog(IntPtr bytes, int len, IntPtr kcp, IntPtr user)
@@ -66,7 +66,7 @@ namespace ET
             }
         }
 
-#if ENABLE_IL2CPP
+#if ILRuntime
 		[AOT.MonoPInvokeCallback(typeof(KcpOutput))]
 #endif
         private static int KcpOutput(IntPtr bytes, int len, IntPtr kcp, IntPtr user)

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1280,720">
+  <displayList>
+    <graph id="n0_o987" name="n0" xy="0,0" size="1280,720" type="rect" fillColor="#ff333333">
+      <relation target="" sidePair="width-width,height-height"/>
+    </graph>
+    <image id="n6_dvgp" name="n6" src="dvgp5" fileName="res/tt11.jpeg" xy="0,108"/>
+    <component id="n5_o987" name="LoginBtn" src="o9872" fileName="ButtonText.xml" xy="440,320" size="400,80">
+      <Button title="进入游戏" titleColor="#000099" titleFontSize="60"/>
+    </component>
+  </displayList>
+</component>

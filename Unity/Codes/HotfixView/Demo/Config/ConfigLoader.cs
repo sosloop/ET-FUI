@@ -7,20 +7,15 @@ namespace ET
     {
         public void GetAllConfigBytes(Dictionary<string, byte[]> output)
         {
-            Dictionary<string, UnityEngine.Object> keys = ResourcesComponent.Instance.GetBundleAll("config.unity3d");
-
-            foreach (var kv in keys)
+            foreach (var config in ResourcesComponent.Instance.ConfigBytes)
             {
-                TextAsset v = kv.Value as TextAsset;
-                string key = kv.Key;
-                output[key] = v.bytes;
+                output.Add(config.Key,config.Value);
             }
         }
 
         public byte[] GetOneConfigBytes(string configName)
         {
-            TextAsset v = ResourcesComponent.Instance.GetAsset("config.unity3d", configName) as TextAsset;
-            return v.bytes;
+            return ResourcesComponent.Instance.ConfigBytes[configName];
         }
     }
 }

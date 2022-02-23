@@ -1,0 +1,11 @@
+{
+  "name": "ET6",
+  "displayName": "",
+  "description": "",
+  "version": "1.0",
+  "author": {
+    "name": "sosloop-2022"
+  },
+  "icon": "",
+  "main": "main.js"
+}

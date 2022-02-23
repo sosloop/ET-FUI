@@ -6,7 +6,6 @@ namespace ET
 {
 	public class UILobbyComponent : Entity, IAwake
 	{
-		public GameObject enterMap;
-		public Text text;
+		public UI_HallForm View { get => this.Parent.GetComponent<UI_HallForm>();} 
 	}
 }
