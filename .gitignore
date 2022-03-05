@@ -58,3 +58,10 @@ Server/.DS_Store
 /Unity/Assembly-CSharp.csproj
 /Excel/~$*.xlsx
 /.vscode
+Unity/Assembly-CSharp-firstpass.csproj
+Unity/Sirenix.OdinInspector.CompatibilityLayer.csproj
+Unity/Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj
+Unity/Sirenix.OdinInspector.Modules.UnityMathematics.csproj
+Unity/Unity.InternalAPIEngineBridge.006.csproj
+Unity/Unity.sln.DotSettings
+Unity/Unity.userprefs
