@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f84dac6a330c478988ed9b2576369bfe, type: 3}
   m_Name: VersionInfoEditorData
   m_EditorClassIdentifier: 
-  m_Active: Normal
+  m_Active: android
   m_ActiveIndex: 0
   m_VersionInfos:
-  - m_Key: Normal
+  - m_Key: android
     m_Value:
       m_ForceUpdateGame: 0
       m_LatestGameVersion: 1.0
@@ -23,6 +23,20 @@ MonoBehaviour:
       m_ServerPath: http://192.168.3.3
       m_ResourceVersion: 1_0_12
       m_Platform: 32
+      m_VersionListLength: 2037
+      m_InternalResourceVersion: 12
+      m_VersionListHashCode: -545784748
+      m_VersionListCompressedLength: 1132
+      m_VersionListCompressedHashCode: -253584030
+      m_IsShowCanNotChangeProperty: 0
+  - m_Key: win
+    m_Value:
+      m_ForceUpdateGame: 0
+      m_LatestGameVersion: 1.0
+      m_InternalGameVersion: 25
+      m_ServerPath: http://192.168.3.3
+      m_ResourceVersion: 1_0_12
+      m_Platform: 1
       m_VersionListLength: 2037
       m_InternalResourceVersion: 12
       m_VersionListHashCode: -545784748

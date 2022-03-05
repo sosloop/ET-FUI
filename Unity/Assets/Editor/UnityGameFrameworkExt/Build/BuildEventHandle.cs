@@ -42,7 +42,7 @@ namespace UGFExtensions.Build.Editor
             int versionListHashCode, int versionListZipLength, int versionListZipHashCode)
         {
             Type resourceBuilderType =
-                Type.GetType("UnityGameFramework.Editor.ResourceTools.ResourceBuilder,Unity.Editor");
+                Type.GetType("UnityGameFramework.Editor.ResourceTools.ResourceBuilder,UnityGameFramework.Editor");
             var window = EditorWindow.GetWindow(resourceBuilderType);
             ResourceBuilderController builderController =
                 window.GetType().GetField("m_Controller", BindingFlags.Instance | BindingFlags.NonPublic)
@@ -69,7 +69,7 @@ namespace UGFExtensions.Build.Editor
             versionInfoData.AutoIncrementInternalGameVersion();
             versionInfoData.ForceUpdateGame = false;
             versionInfoData.ResourceVersion = builderController.ApplicableGameVersion.Replace('.', '_')+ "_"+builderController.InternalResourceVersion;
-            versionInfoData.Platform = platform;
+            versionInfoData.Platform = (Platform)(int)platform;
             versionInfoData.LatestGameVersion = builderController.ApplicableGameVersion;
             versionInfoData.InternalResourceVersion = builderController.InternalResourceVersion;
             versionInfoData.VersionListLength = versionListLength;

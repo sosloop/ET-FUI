@@ -1,5 +1,5 @@
 {
-  "CheckVersionUrl": "http://192.168.3.3/{0}Version.txt",
+  "CheckVersionUrl": "http://192.168.3.3/{0}Version.json",
   "WindowsAppUrl": "http://www.baidu.com",
   "MacOSAppUrl": "http://www.baidu.com",
   "IOSAppUrl": "http://www.baidu.com",
