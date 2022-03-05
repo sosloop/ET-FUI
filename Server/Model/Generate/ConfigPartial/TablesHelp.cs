@@ -65,7 +65,7 @@ namespace ET
         }
         private ByteBuf LoadByteBuf(string file)
         {
-            return new ByteBuf(File.ReadAllBytes($"../Config/{file}.bytes"));
+            return new ByteBuf(File.ReadAllBytes($"../Config/Excel/{file}.bytes"));
         }
     }
 }

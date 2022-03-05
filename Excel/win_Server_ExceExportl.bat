@@ -7,7 +7,7 @@ set Excel_ROOT=%WORKSPACE%\Excel
 @ECHO =======================SERVER==========================
 
 set Export_Server_Code_ROOT=%WORKSPACE%\Server\Model\Generate\Config
-set Export_Server_Data_ROOT=%WORKSPACE%\Config
+set Export_Server_Data_ROOT=%WORKSPACE%\Config\Excel
 
 %GEN_CLIENT% -h %LUBAN_SERVER_IP% -j cfg --^
  -d %Excel_ROOT%\__root_server__.xml ^
