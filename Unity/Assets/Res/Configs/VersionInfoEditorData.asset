@@ -19,15 +19,15 @@ MonoBehaviour:
     m_Value:
       m_ForceUpdateGame: 0
       m_LatestGameVersion: 1.0
-      m_InternalGameVersion: 19
-      m_ServerPath: http://127.0.0.1
-      m_ResourceVersion: 1_0_8
-      m_Platform: 1
-      m_VersionListLength: 2634
-      m_InternalResourceVersion: 8
-      m_VersionListHashCode: -1766883048
-      m_VersionListCompressedLength: 1268
-      m_VersionListCompressedHashCode: 1539953854
+      m_InternalGameVersion: 25
+      m_ServerPath: http://192.168.3.3
+      m_ResourceVersion: 1_0_12
+      m_Platform: 32
+      m_VersionListLength: 2037
+      m_InternalResourceVersion: 12
+      m_VersionListHashCode: -545784748
+      m_VersionListCompressedLength: 1132
+      m_VersionListCompressedHashCode: -253584030
       m_IsShowCanNotChangeProperty: 0
   m_IsGenerateToFullPath: 0
   m_OutPath: E:/AssetBudle/Full/WindowsVersion.txt

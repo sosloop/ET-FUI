@@ -3,13 +3,8 @@
   <ResourceCollection>
     <Resources>
       <Resource Name="Res/Configs" LoadType="0" Packed="True" />
-      <Resource Name="Res/DataTables/Aircraft" LoadType="0" Packed="True" />
-      <Resource Name="Res/DataTables/Hotfix/AIConfigCategory" LoadType="0" Packed="True" />
-      <Resource Name="Res/DataTables/Hotfix/StartMachineConfigCategory" LoadType="0" Packed="True" />
-      <Resource Name="Res/DataTables/Hotfix/StartProcessConfigCategory" LoadType="0" Packed="True" />
-      <Resource Name="Res/DataTables/Hotfix/StartSceneConfigCategory" LoadType="0" Packed="True" />
-      <Resource Name="Res/DataTables/Hotfix/StartZoneConfigCategory" LoadType="0" Packed="True" />
-      <Resource Name="Res/DataTables/Hotfix/UnitConfigCategory" LoadType="0" Packed="True" />
+      <Resource Name="Res/DataTables/aiconfigcategory" FileSystem="Excels" LoadType="4" Packed="True" />
+      <Resource Name="Res/DataTables/unitconfigcategory" FileSystem="Excels" LoadType="4" Packed="True" />
       <Resource Name="Res/Entities" LoadType="0" Packed="True" />
       <Resource Name="Res/FGUI" LoadType="0" Packed="True" />
       <Resource Name="Res/Fonts" LoadType="0" Packed="True" />
@@ -40,13 +35,11 @@
       <Asset Guid="6e0b4a05932877a4b89fb3fb32c3e72b" ResourceName="Res/Unit" />
       <Asset Guid="6e3730451fa077346abd4ac642ea71d8" ResourceName="Res/Textures" />
       <Asset Guid="6f61bc53c41ba664fa527d3386ecfd1e" ResourceName="Res/Unit" />
-      <Asset Guid="78b9cd80f7a437546b900aa20ce78495" ResourceName="Res/DataTables/Hotfix/StartProcessConfigCategory" />
       <Asset Guid="7976506658c16be43abef26ad2cabc50" ResourceName="Res/HotfixDll" />
       <Asset Guid="7fd11dc5d29076d469d414dec2818f11" ResourceName="Res/Configs" />
       <Asset Guid="81d4af5a5190e3d4d88c97161d881bf3" ResourceName="Res/Unit" />
-      <Asset Guid="85d0968bbbd51a74e9dfdbee20e48bac" ResourceName="Res/DataTables/Hotfix/UnitConfigCategory" />
+      <Asset Guid="85d0968bbbd51a74e9dfdbee20e48bac" ResourceName="Res/DataTables/unitconfigcategory" />
       <Asset Guid="943f3c476130c4f4f8ae55ef3ccd38ba" ResourceName="Res/Unit" />
-      <Asset Guid="96754590a21b5ec46b402ae63fada8e7" ResourceName="Res/DataTables/Hotfix/StartZoneConfigCategory" />
       <Asset Guid="9e27b0bdab1ad7242a009899d15c0e67" ResourceName="Res/Unit" />
       <Asset Guid="9eb88d5e2a9345d449fd1c420288dcc6" ResourceName="Res/HotfixDll" />
       <Asset Guid="a5294483f20f40d449699101bb428cda" ResourceName="Res/Scenes" />
@@ -54,14 +47,11 @@
       <Asset Guid="a749f4485b342b7469956010abf2ab25" ResourceName="Res/Unit" />
       <Asset Guid="b1494958bf9856a479bec1767c02878e" ResourceName="Res/Unit" />
       <Asset Guid="baedbbad82997f445a8cb4da210404e0" ResourceName="Res/Meshes" />
-      <Asset Guid="c638f46a32bceec489c606914b597203" ResourceName="Res/DataTables/Hotfix/StartSceneConfigCategory" />
       <Asset Guid="c7d1e11dd37634b48a9dd4012b8e4306" ResourceName="Res/UISounds" />
-      <Asset Guid="ca65f1ce888a6ed41b7e269e412cecc9" ResourceName="Res/DataTables/Aircraft" />
-      <Asset Guid="d1081d0901e849c44ac6685391a97387" ResourceName="Res/DataTables/Hotfix/StartMachineConfigCategory" />
       <Asset Guid="ddf31bc14693f4845af1f8b7808d0146" ResourceName="Res/FGUI" />
       <Asset Guid="dfc15c633f0d98141920018f79a042a6" ResourceName="Res/Unit" />
       <Asset Guid="ed14df0368fe53543907335c0e3902c6" ResourceName="Res/Unit" />
-      <Asset Guid="f2d09a09c89a2974f96c33f2a2b59df4" ResourceName="Res/DataTables/Hotfix/AIConfigCategory" />
+      <Asset Guid="f2d09a09c89a2974f96c33f2a2b59df4" ResourceName="Res/DataTables/aiconfigcategory" />
       <Asset Guid="f57ee821486cd7b488adf1063a8dd207" ResourceName="Res/Unit" />
     </Assets>
   </ResourceCollection>

@@ -37,7 +37,7 @@ namespace ET
                 return;
             }
             
-            Log.Debug($"AddPackageAsync {type}包");
+            Log.Debug($"<color=green>AddPackageAsync {type}包</color>");
             if (GameEntry.Base.EditorResourceMode)
             {
                 UIPackage uiPackage = UIPackage.AddPackage($"{FUI_PACKAGE_DIR}/{type}");

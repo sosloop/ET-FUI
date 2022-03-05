@@ -20,7 +20,7 @@ namespace ET
 				toMap = "Map1";
 			}
 
-			StartSceneConfig startSceneConfig = StartSceneConfigCategory.Instance.GetBySceneName(unit.DomainScene().Zone, toMap);
+			StartSceneConfig startSceneConfig = TablesHelp.Instance.Tables.StartSceneConfigCategory.GetBySceneName(unit.DomainScene().Zone, toMap);
 			TransferHelper.Transfer(unit, startSceneConfig.InstanceId, toMap).Coroutine();
 			
 			reply();

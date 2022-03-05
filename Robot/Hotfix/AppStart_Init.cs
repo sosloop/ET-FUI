@@ -8,8 +8,7 @@ namespace ET
             Game.Scene.AddComponent<CoroutineLockComponent>();
 
             // 加载配置
-            Game.Scene.AddComponent<ConfigComponent>();
-            await ConfigComponent.Instance.LoadAsync();
+            await TablesHelp.Instance.LoadAllConfigAsync();
             
             Game.Scene.AddComponent<OpcodeTypeComponent>();
             Game.Scene.AddComponent<MessageDispatcherComponent>();
@@ -20,7 +19,7 @@ namespace ET
             Game.Scene.AddComponent<RobotCaseDispatcherComponent>();
             Game.Scene.AddComponent<RobotCaseComponent>();
             
-            var processScenes = StartSceneConfigCategory.Instance.GetByProcess(Game.Options.Process);
+            var processScenes = TablesHelp.Instance.Tables.StartSceneConfigCategory.GetByProcess(Game.Options.Process);
             foreach (StartSceneConfig startConfig in processScenes)
             {
                 await RobotSceneFactory.Create(Game.Scene, startConfig.Id, startConfig.InstanceId, startConfig.Zone, startConfig.Name, startConfig.Type, startConfig);

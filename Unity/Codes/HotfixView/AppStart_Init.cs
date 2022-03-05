@@ -8,13 +8,11 @@ namespace ET
             Game.Scene.AddComponent<CoroutineLockComponent>();
 
             Game.Scene.AddComponent<FUIPackageComponent>();
+
             // 加载配置
+            await TablesHelp.Instance.LoadAllConfigAsync();
             Game.Scene.AddComponent<ResourcesComponent>();
-            await ResourcesComponent.Instance.LoadAllConfigAsync();
-            
-            Game.Scene.AddComponent<ConfigComponent>();
-            ConfigComponent.Instance.Load();
-            
+         
             Game.Scene.AddComponent<OpcodeTypeComponent>();
             Game.Scene.AddComponent<MessageDispatcherComponent>();
             

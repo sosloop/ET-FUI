@@ -44,18 +44,18 @@ namespace ILRuntime.Runtime.Generated
             args = new Type[]{typeof(System.String), typeof(System.String), typeof(System.String), typeof(System.String)};
             method = type.GetMethod("Concat", flag, null, args, null);
             app.RegisterCLRMethodRedirection(method, Concat_6);
-            args = new Type[]{typeof(System.String)};
-            method = type.GetMethod("IsNullOrEmpty", flag, null, args, null);
-            app.RegisterCLRMethodRedirection(method, IsNullOrEmpty_7);
-            args = new Type[]{typeof(System.String), typeof(System.String)};
-            method = type.GetMethod("Replace", flag, null, args, null);
-            app.RegisterCLRMethodRedirection(method, Replace_8);
-            args = new Type[]{typeof(System.String), typeof(System.String)};
-            method = type.GetMethod("op_Equality", flag, null, args, null);
-            app.RegisterCLRMethodRedirection(method, op_Equality_9);
             args = new Type[]{typeof(System.String[])};
             method = type.GetMethod("Concat", flag, null, args, null);
-            app.RegisterCLRMethodRedirection(method, Concat_10);
+            app.RegisterCLRMethodRedirection(method, Concat_7);
+            args = new Type[]{typeof(System.String)};
+            method = type.GetMethod("IsNullOrEmpty", flag, null, args, null);
+            app.RegisterCLRMethodRedirection(method, IsNullOrEmpty_8);
+            args = new Type[]{typeof(System.String), typeof(System.String)};
+            method = type.GetMethod("Replace", flag, null, args, null);
+            app.RegisterCLRMethodRedirection(method, Replace_9);
+            args = new Type[]{typeof(System.String), typeof(System.String)};
+            method = type.GetMethod("op_Equality", flag, null, args, null);
+            app.RegisterCLRMethodRedirection(method, op_Equality_10);
 
             field = type.GetField("Empty", flag);
             app.RegisterCLRFieldGetter(field, get_Empty_0);
@@ -231,7 +231,23 @@ namespace ILRuntime.Runtime.Generated
             return ILIntepreter.PushObject(__ret, __mStack, result_of_this_method);
         }
 
-        static StackObject* IsNullOrEmpty_7(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
+        static StackObject* Concat_7(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
+        {
+            ILRuntime.Runtime.Enviorment.AppDomain __domain = __intp.AppDomain;
+            StackObject* ptr_of_this_method;
+            StackObject* __ret = ILIntepreter.Minus(__esp, 1);
+
+            ptr_of_this_method = ILIntepreter.Minus(__esp, 1);
+            System.String[] @values = (System.String[])typeof(System.String[]).CheckCLRTypes(StackObject.ToObject(ptr_of_this_method, __domain, __mStack), (CLR.Utils.Extensions.TypeFlags)0);
+            __intp.Free(ptr_of_this_method);
+
+
+            var result_of_this_method = System.String.Concat(@values);
+
+            return ILIntepreter.PushObject(__ret, __mStack, result_of_this_method);
+        }
+
+        static StackObject* IsNullOrEmpty_8(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
         {
             ILRuntime.Runtime.Enviorment.AppDomain __domain = __intp.AppDomain;
             StackObject* ptr_of_this_method;
@@ -249,7 +265,7 @@ namespace ILRuntime.Runtime.Generated
             return __ret + 1;
         }
 
-        static StackObject* Replace_8(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
+        static StackObject* Replace_9(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
         {
             ILRuntime.Runtime.Enviorment.AppDomain __domain = __intp.AppDomain;
             StackObject* ptr_of_this_method;
@@ -272,7 +288,7 @@ namespace ILRuntime.Runtime.Generated
             return ILIntepreter.PushObject(__ret, __mStack, result_of_this_method);
         }
 
-        static StackObject* op_Equality_9(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
+        static StackObject* op_Equality_10(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
         {
             ILRuntime.Runtime.Enviorment.AppDomain __domain = __intp.AppDomain;
             StackObject* ptr_of_this_method;
@@ -292,22 +308,6 @@ namespace ILRuntime.Runtime.Generated
             __ret->ObjectType = ObjectTypes.Integer;
             __ret->Value = result_of_this_method ? 1 : 0;
             return __ret + 1;
-        }
-
-        static StackObject* Concat_10(ILIntepreter __intp, StackObject* __esp, IList<object> __mStack, CLRMethod __method, bool isNewObj)
-        {
-            ILRuntime.Runtime.Enviorment.AppDomain __domain = __intp.AppDomain;
-            StackObject* ptr_of_this_method;
-            StackObject* __ret = ILIntepreter.Minus(__esp, 1);
-
-            ptr_of_this_method = ILIntepreter.Minus(__esp, 1);
-            System.String[] @values = (System.String[])typeof(System.String[]).CheckCLRTypes(StackObject.ToObject(ptr_of_this_method, __domain, __mStack), (CLR.Utils.Extensions.TypeFlags)0);
-            __intp.Free(ptr_of_this_method);
-
-
-            var result_of_this_method = System.String.Concat(@values);
-
-            return ILIntepreter.PushObject(__ret, __mStack, result_of_this_method);
         }
 
 

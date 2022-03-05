@@ -26,23 +26,13 @@ MonoBehaviour:
   - valid: 1
     name: 
     variant: 
-    fileSystem: 
+    fileSystem: Excels
     groups: 
     assetsDirectoryPath: Assets/Res/DataTables
-    loadType: 0
+    loadType: 4
     packed: 1
     filterType: 1
-    searchPatterns: '*.bytes'
-  - valid: 1
-    name: 
-    variant: 
-    fileSystem: 
-    groups: 
-    assetsDirectoryPath: Assets/Res/DataTables/Hotfix
-    loadType: 0
-    packed: 1
-    filterType: 1
-    searchPatterns: '*.bytes'
+    searchPatterns: '*.*'
   - valid: 1
     name: 
     variant: 

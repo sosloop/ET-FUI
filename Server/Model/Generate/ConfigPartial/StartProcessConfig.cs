@@ -25,13 +25,15 @@ namespace ET
 
         public string OuterIP => this.StartMachineConfig.OuterIP;
 
-        public StartMachineConfig StartMachineConfig => StartMachineConfigCategory.Instance.Get(this.MachineId);
+        public StartMachineConfig StartMachineConfig => TablesHelp.Instance.Tables.StartMachineConfigCategory.Get(this.MachineId);
 
-        public override void AfterEndInit()
+        partial void PostResolve()
         {
             InstanceIdStruct instanceIdStruct = new InstanceIdStruct((int)this.Id, 0);
             this.SceneId = instanceIdStruct.ToLong();
             Log.Info($"StartProcess info: {this.MachineId} {this.Id} {this.SceneId}");
         }
+
+       
     }
 }

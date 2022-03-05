@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityGameFramework.Editor.ResourceTools;
 
-namespace UGFExtensions.Editor.ResourceTools
+namespace StarForce.Editor.ResourceTools
 {
     public class ResourceRuleEditorData : ScriptableObject
     {

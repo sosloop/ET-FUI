@@ -65,10 +65,6 @@ namespace UGFExtensions
             return Utility.Text.Format("Assets/Res/HotfixDll/{0}.bytes", assetName);
         }
         
-        public static string GetHotfixConfigAsset(string assetName)
-        {
-            return Utility.Text.Format("Assets/Res/DataTables/Hotfix/{0}.bytes", assetName);
-        }
         
         public static string GetUnitAsset(string assetName)
         {

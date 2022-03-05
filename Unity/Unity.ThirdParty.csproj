@@ -26,7 +26,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2020_3_18;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_IG;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;NET452;ODIN_INSPECTOR;ODIN_INSPECTOR_3;ENABLE_LOG;ILRuntime;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2020_3_18;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_4_6;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_IG;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;NET452;ENABLE_LOG;ILRuntime;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
@@ -55,6 +55,7 @@
      <Compile Include="Assets\ThirdParty\GameFramework\ObjectPool\ObjectPoolManager.Object.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Resource\IResourceGroup.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Base\GameFrameworkSerializer.cs" />
+     <Compile Include="Assets\ThirdParty\LubanLib\BeanBase.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Base\DataProvider\DataProvider.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\GuidSerializer.cs" />
      <Compile Include="Assets\ThirdParty\ShareLib\Kcp\Kcp.cs" />
@@ -73,6 +74,7 @@
      <Compile Include="Assets\ThirdParty\GameFramework\Debugger\IDebuggerWindow.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Resource\UpdatableVersionList.ResourceGroup.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\Mono.Cecil\AssemblyHashAlgorithm.cs" />
+     <Compile Include="Assets\ThirdParty\LubanLib\EditorText.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Base\EventPool\EventPool.Event.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\Mono\Disposable.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\ImmutableCollectionDecorator.cs" />
@@ -107,6 +109,7 @@
      <Compile Include="Assets\ThirdParty\GameFramework\Resource\ResourceManager.ReadWriteResourceInfo.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Runtime\CLRBinding\ValueTypeBindingGenerator.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Other\UncheckedStack.cs" />
+     <Compile Include="Assets\ThirdParty\LubanLib\SimpleJSON\SimpleJSONBinary.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\Mono.Cecil.Metadata\MetadataToken.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Network\NetworkManager.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Event\GameEventArgs.cs" />
@@ -216,6 +219,7 @@
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\Mono.Cecil.Metadata\Buffers.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Base\ReferencePool\ReferencePoolInfo.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Entity\IEntity.cs" />
+     <Compile Include="Assets\ThirdParty\LubanLib\SimpleJSON\SimpleJSONDotNetTypes.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Base\GameFrameworkEventArgs.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Network\NetworkManager.ConnectState.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Network\NetworkManager.TcpNetworkChannel.cs" />
@@ -259,6 +263,7 @@
      <Compile Include="Assets\ThirdParty\ILRuntime\Runtime\ILRuntimeJITAttribute.cs" />
      <Compile Include="Assets\ThirdParty\LitJson\UnityTypeBindings.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\ReflectedUriDecorator.cs" />
+     <Compile Include="Assets\ThirdParty\LubanLib\StringUtil.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\Mono.Cecil\EventReference.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Resource\ResourceManager.ResourceGroupCollection.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Base\DataProvider\ReadDataSuccessEventArgs.cs" />
@@ -299,6 +304,7 @@
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\Mono\StreamExtensions.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\IExtensible.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Resource\ResourceManager.ResourceChecker.CheckInfo.RemoteVersionInfo.cs" />
+     <Compile Include="Assets\ThirdParty\LubanLib\EditorBeanBase.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\UI\IUIGroupHelper.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\symbols\pdb\Microsoft.Cci.Pdb\DbiDbgHdr.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\Mono.Cecil\PropertyDefinition.cs" />
@@ -332,6 +338,7 @@
      <Compile Include="Assets\ThirdParty\GameFramework\Resource\LoadResourceAgentHelperUpdateEventArgs.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Runtime\Debugger\DebugService.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Setting\ISettingManager.cs" />
+     <Compile Include="Assets\ThirdParty\LubanLib\SimpleJSON\SimpleJSON.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\symbols\pdb\Microsoft.Cci.Pdb\PdbLine.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\TimeSpanSerializer.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\DataTable\IDataRow.cs" />
@@ -358,6 +365,7 @@
      <Compile Include="Assets\ThirdParty\GameFramework\Download\IDownloadAgentHelper.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\EnumSerializer.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\Mono\Type.cs" />
+     <Compile Include="Assets\ThirdParty\LubanLib\SimpleJSON\SimpleJSONUnity.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\ObjectPool\ObjectInfo.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\Int32Serializer.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Base\GameFrameworkEntry.cs" />
@@ -405,6 +413,7 @@
      <Compile Include="Assets\ThirdParty\GameFramework\Resource\PackageVersionListSerializer.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\Mono.Cecil\IMemberDefinition.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Base\TaskPool\StartTaskStatus.cs" />
+     <Compile Include="Assets\ThirdParty\LubanLib\ITypeId.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Runtime\Debugger\DebuggerServer\DebuggerServer.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\symbols\pdb\Microsoft.Cci.Pdb\PdbInfo.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Download\Constant.cs" />
@@ -469,6 +478,7 @@
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\SingleSerializer.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\Mono.Cecil.Cil\VariableDefinition.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\DataNode\DataNodeManager.cs" />
+     <Compile Include="Assets\ThirdParty\LubanLib\EditorEnumItemInfo.cs" />
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\IProtoTypeSerializer.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Download\DownloadManager.DownloadTask.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\symbols\mdb\Mono.CompilerServices.SymbolWriter\SourceMethodBuilder.cs" />
@@ -497,6 +507,7 @@
      <Compile Include="Assets\ThirdParty\protobuf-net\Serializers\ParseableSerializer.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\DataNode\IDataNode.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\Mono.Cecil\AssemblyReader.cs" />
+     <Compile Include="Assets\ThirdParty\LubanLib\ByteBuf.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\Mono.Cecil\IGenericInstance.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Debugger\IDebuggerManager.cs" />
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\Mono.Cecil\ReferenceType.cs" />
@@ -755,6 +766,7 @@
      <Compile Include="Assets\ThirdParty\ILRuntime\Mono.Cecil\Mono.Cecil\AssemblyFlags.cs" />
      <Compile Include="Assets\ThirdParty\GameFramework\Resource\ApplyResourcesCompleteCallback.cs" />
      <None Include="Assets\ThirdParty\Unity.ThirdParty.asmdef" />
+     <None Include="Assets\ThirdParty\LubanLib\SimpleJSON\Changelog.txt" />
      <Reference Include="UnityEngine">
      <HintPath>D:/Soft/Unity/2020.3.18f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
      </Reference>
@@ -781,12 +793,6 @@
      </Reference>
      <Reference Include="UnityEngine.ClothModule">
      <HintPath>D:/Soft/Unity/2020.3.18f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ClothModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.ClusterInputModule">
-     <HintPath>D:/Soft/Unity/2020.3.18f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterInputModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.ClusterRendererModule">
-     <HintPath>D:/Soft/Unity/2020.3.18f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.ClusterRendererModule.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.CoreModule">
      <HintPath>D:/Soft/Unity/2020.3.18f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.CoreModule.dll</HintPath>
@@ -934,9 +940,6 @@
      </Reference>
      <Reference Include="UnityEngine.VideoModule">
      <HintPath>D:/Soft/Unity/2020.3.18f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.VideoModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.VirtualTexturingModule">
-     <HintPath>D:/Soft/Unity/2020.3.18f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.VirtualTexturingModule.dll</HintPath>
      </Reference>
      <Reference Include="UnityEngine.WindModule">
      <HintPath>D:/Soft/Unity/2020.3.18f1c1/Editor/Data/Managed/UnityEngine/UnityEngine.WindModule.dll</HintPath>
@@ -1334,11 +1337,11 @@
      <Reference Include="System.Xml.XPath.XDocument">
      <HintPath>D:/Soft/Unity/2020.3.18f1c1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEditor.UI">
-     <HintPath>D:/workpaces/Unity/ET-FUI/Unity/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-     </Reference>
      <Reference Include="UnityEngine.UI">
      <HintPath>D:/workpaces/Unity/ET-FUI/Unity/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+     </Reference>
+     <Reference Include="UnityEditor.UI">
+     <HintPath>D:/workpaces/Unity/ET-FUI/Unity/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
      </Reference>
   </ItemGroup>
   <ItemGroup>
