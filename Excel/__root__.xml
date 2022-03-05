@@ -8,7 +8,7 @@
 	
 	<import name="."/>
 	
-	<importexcel name="__tables_client__.xlsx" type="table"/>
+	<importexcel name="__tables__.xlsx" type="table"/>
 	<importexcel name="__enums__.xlsx" type="enum"/>
 	<importexcel name="__beans__.xlsx" type="bean"/>
 
