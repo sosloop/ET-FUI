@@ -48,7 +48,6 @@ namespace ET
 
         public static void Awake(this FGUIComponent self)
         {
-            GRoot.inst.SetContentScaleFactor(1280,720,UIContentScaler.ScreenMatchMode.MatchWidthOrHeight);
             if (null != self.AllWindowsDic)
             {
                 self.AllWindowsDic.Clear();

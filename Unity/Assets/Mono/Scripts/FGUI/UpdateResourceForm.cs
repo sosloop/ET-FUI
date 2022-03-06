@@ -14,6 +14,7 @@ namespace UGFExtensions
             UIPackage.AddPackage("FGUI/UModel");
             UModelBinder.BindAll();
             this.uiUpdateForm1 = UI_UpdateForm.CreateInstance();
+            this.uiUpdateForm1.MakeFullScreen();
             GRoot.inst.AddChild(uiUpdateForm1);
         }
         

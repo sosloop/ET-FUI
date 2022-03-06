@@ -42,7 +42,7 @@ namespace UGFExtensions.Build.Editor
             int versionListHashCode, int versionListZipLength, int versionListZipHashCode)
         {
             Type resourceBuilderType =
-                Type.GetType("UnityGameFramework.Editor.ResourceTools.ResourceBuilder,UnityGameFramework.Editor");
+                Type.GetType("UnityGameFramework.Editor.ResourceTools.ResourceBuilder,Unity.Editor");
             var window = EditorWindow.GetWindow(resourceBuilderType);
             ResourceBuilderController builderController =
                 window.GetType().GetField("m_Controller", BindingFlags.Instance | BindingFlags.NonPublic)

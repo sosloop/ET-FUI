@@ -26,7 +26,7 @@ namespace ET
                 Log.Error($"fguibaseWindows {self.WindowID} rootTransform is null!!!");
                 return;
             }
-
+            self.uiTransform.MakeFullScreen();
             rootTransform.AddChild(self.uiTransform);
         }
     }

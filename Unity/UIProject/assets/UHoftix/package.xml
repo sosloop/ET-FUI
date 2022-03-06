@@ -8,5 +8,5 @@
     <component id="pqy84" name="GameForm.xml" path="/" exported="true"/>
     <image id="dvgp5" name="tt11.jpeg" path="/res/"/>
   </resources>
-  <publish name="" path="D:\unitystudy\ET-FUI\Unity\Assets\Res\FGUI" packageCount="2" codePath="D:\unitystudy\ET-FUI\Unity\Codes"/>
+  <publish name="" path="D:\workpaces\Unity\ET-FUI\Unity\Assets\Res\FGUI" packageCount="2" codePath="D:\workpaces\Unity\ET-FUI\Unity\Codes"/>
 </packageDescription>

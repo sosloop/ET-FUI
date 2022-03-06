@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1280,720">
   <displayList>
-    <graph id="n0_o987" name="n0" xy="0,0" size="1280,720" type="rect" lineSize="0" fillColor="#ff333333">
-      <relation target="" sidePair="width-width,height-height"/>
+    <graph id="n0_o987" name="n0" xy="-320,0" size="1920,720" type="rect" lineSize="0" fillColor="#ff333333">
+      <relation target="" sidePair="center-center,middle-middle"/>
     </graph>
-    <text id="n1_o987" name="n1" xy="0,97" size="1280,100" fontSize="60" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="启动更新"/>
+    <text id="n1_o987" name="n1" xy="0,97" size="1280,100" fontSize="60" color="#ffffff" align="center" vAlign="middle" autoSize="none" text="启动更新">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
     <component id="n3_o987" name="Progress" src="o9871" fileName="UpdateProgressBar.xml" xy="140,595" size="1000,40">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
       <ProgressBar max="100"/>
     </component>
-    <text id="n4_o987" name="Tip" xy="15,484" size="1280,100" fontSize="40" color="#ffff00" align="center" vAlign="bottom" autoSize="none" text="启动更新"/>
+    <text id="n4_o987" name="Tip" xy="15,484" size="1280,100" fontSize="40" color="#ffff00" align="center" vAlign="bottom" autoSize="none" text="启动更新">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
   </displayList>
 </component>

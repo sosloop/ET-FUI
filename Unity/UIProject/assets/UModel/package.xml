@@ -4,5 +4,5 @@
     <component id="6mfb0" name="UpdateForm.xml" path="/" exported="true"/>
     <component id="o9871" name="UpdateProgressBar.xml" path="/"/>
   </resources>
-  <publish name="" path="D:\unitystudy\ET-FUI\Unity\Assets\Resources\FGUI" packageCount="2" genCode="true" codePath="D:\unitystudy\ET-FUI\Unity\Assets\Mono\FGUIAutoGen"/>
+  <publish name="" path="D:\workpaces\Unity\ET-FUI\Unity\Assets\Resources\FGUI" packageCount="2" genCode="true" codePath="D:\workpaces\Unity\ET-FUI\Unity\Assets\Mono\FGUIAutoGen"/>
 </packageDescription>
