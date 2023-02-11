@@ -9,12 +9,9 @@ namespace ET.Client
         protected override async ETTask Run(Scene scene, ET.EventType.EntryEvent3 args)
         {
             // 加载配置
-            Root.Instance.Scene.AddComponent<ResourcesComponent>();
-            
             Root.Instance.Scene.AddComponent<GlobalComponent>();
+            Root.Instance.Scene.AddComponent<FsmDispatcherComponent>();
 
-            await ResourcesComponent.Instance.LoadBundleAsync("unit.unity3d");
-            
             Scene clientScene = await SceneFactory.CreateClientScene(1, "Game");
             
             await EventSystem.Instance.PublishAsync(clientScene, new EventType.AppStartInitFinish());

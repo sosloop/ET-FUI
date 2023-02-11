@@ -26,8 +26,8 @@ namespace ET
             }
             
             // 设置ab包
-            AssetImporter assetImporter = AssetImporter.GetAtPath(toDir);
-            assetImporter.assetBundleName = "AotDlls.unity3d";
+            // AssetImporter assetImporter = AssetImporter.GetAtPath(toDir);
+            // assetImporter.assetBundleName = "AotDlls.unity3d";
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
         }

@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99b93107d7bc31740838a156d99e161c, type: 3}
+  m_Name: ResourceRuleEditor
+  m_EditorClassIdentifier: 
+  rules:
+  - valid: 1
+    name: 
+    variant: 
+    fileSystem: boot
+    groups: b1
+    assetsDirectoryPath: Assets/Bundles/Code
+    loadType: 4
+    packed: 1
+    filterType: 0
+    searchPatterns: '*.*'
+  - valid: 1
+    name: 
+    variant: 
+    fileSystem: boot
+    groups: b1
+    assetsDirectoryPath: Assets/Bundles/AotDlls
+    loadType: 4
+    packed: 1
+    filterType: 0
+    searchPatterns: '*.*'
+  - valid: 1
+    name: 
+    variant: 
+    fileSystem: boot
+    groups: b1
+    assetsDirectoryPath: Assets/Bundles/Config
+    loadType: 4
+    packed: 1
+    filterType: 0
+    searchPatterns: '*.*'
+  - valid: 1
+    name: 
+    variant: 
+    fileSystem: fui
+    groups: f1
+    assetsDirectoryPath: Assets/Bundles/FUI
+    loadType: 4
+    packed: 1
+    filterType: 3
+    searchPatterns: '*.bytes'
+  - valid: 1
+    name: 
+    variant: 
+    fileSystem: 
+    groups: 
+    assetsDirectoryPath: Assets/Bundles/FUI
+    loadType: 0
+    packed: 1
+    filterType: 3
+    searchPatterns: '*.png'

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1136,640">
+  <displayList>
+    <component id="n7_98vk" name="n7" src="98vk4" fileName="mask/MaskTransparentBg.xml" xy="568,320" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <text id="n4_98vk" name="title" xy="567,402" pivot="0.5,0.5" anchor="true" size="223,49" fontSize="36" color="#ffffff" text="标题1233333">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </text>
+    <component id="n9_98vk" name="wait" src="98vk9" fileName="wait/GlobalModalWaiting.xml" xy="568,320" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+  </displayList>
+</component>

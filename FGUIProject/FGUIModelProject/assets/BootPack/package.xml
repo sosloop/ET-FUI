@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="jzlp9kcg">
+  <resources>
+    <component id="98vk0" name="BootUI.xml" path="/" exported="true"/>
+    <component id="98vk2" name="MaskBg.xml" path="/mask/"/>
+    <component id="98vk3" name="ProgressBar1.xml" path="/comp/"/>
+    <component id="98vk4" name="MaskTransparentBg.xml" path="/mask/"/>
+    <component id="98vk5" name="TipUI.xml" path="/" exported="true"/>
+    <component id="98vk6" name="Button1.xml" path="/comp/"/>
+    <component id="98vk7" name="NetLoadingUI.xml" path="/" exported="true"/>
+    <component id="98vk9" name="GlobalModalWaiting.xml" path="/wait/"/>
+    <image id="98vka" name="icon_zzz.png" path="/wait/"/>
+  </resources>
+  <publish name="" genCode="true"/>
+</packageDescription>

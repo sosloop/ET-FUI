@@ -22,6 +22,10 @@
         {
         }
 
+        public struct AfterCreateLoginScene
+        {
+        }
+
         public struct LoginFinish
         {
         }

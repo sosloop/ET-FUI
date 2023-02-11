@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using UGFExtensions;
 using UnityEngine;
 
 namespace ET.Client
@@ -55,16 +56,12 @@ namespace ET.Client
             }
             else
             {
-                using (Root.Instance.Scene.AddComponent<ResourcesComponent>())
+                string Config_Prefix = "Assets/Bundles/Config/{0}.bytes";
+                
+                foreach (Type configType in configTypes)
                 {
-                    const string configBundleName = "config.unity3d";
-                    ResourcesComponent.Instance.LoadBundle(configBundleName);
-                    
-                    foreach (Type configType in configTypes)
-                    {
-                        TextAsset v = ResourcesComponent.Instance.GetAsset(configBundleName, configType.Name) as TextAsset;
-                        output[configType] = v.bytes;
-                    }
+                    byte[] v = GameEntrys.Resource.LoadBinaryFromFileSystem(string.Format(Config_Prefix,configType.Name));
+                    output[configType] = v;
                 }
             }
 

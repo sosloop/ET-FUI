@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<UnityGameFramework>
+  <ResourceCollection>
+    <Resources>
+      <Resource Name="Bundles/AotDlls" FileSystem="boot" LoadType="4" Packed="True" ResourceGroups="b1" />
+      <Resource Name="Bundles/Code" FileSystem="boot" LoadType="4" Packed="True" ResourceGroups="b1" />
+      <Resource Name="Bundles/Config" FileSystem="boot" LoadType="4" Packed="True" ResourceGroups="b1" />
+    </Resources>
+    <Assets>
+      <Asset Guid="277d58db3067742a7b32f9994984b3bc" ResourceName="Bundles/Config" />
+      <Asset Guid="8092bee8b875d5f448e05efd32b87759" ResourceName="Bundles/Code" />
+      <Asset Guid="c7d4b75260b3ff84baef9e04e8320a94" ResourceName="Bundles/AotDlls" />
+    </Assets>
+  </ResourceCollection>
+</UnityGameFramework>

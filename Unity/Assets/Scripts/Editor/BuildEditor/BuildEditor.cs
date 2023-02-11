@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using FUIEditor;
 using UnityEditor;
 using UnityEditor.Compilation;
 using UnityEngine;
@@ -163,8 +164,8 @@ namespace ET
 				ToolsEditor.ExcelExporter();
 				
 				// 设置ab包
-				AssetImporter assetImporter = AssetImporter.GetAtPath($"Assets/Bundles/Config");
-				assetImporter.assetBundleName = "Config.unity3d";
+				// AssetImporter assetImporter = AssetImporter.GetAtPath($"Assets/Bundles/Config");
+				// assetImporter.assetBundleName = "Config.unity3d";
 				AssetDatabase.SaveAssets();
 				AssetDatabase.Refresh();
 			}
@@ -172,6 +173,11 @@ namespace ET
 			if (GUILayout.Button("Proto2CS"))
 			{
 				ToolsEditor.Proto2CS();
+			}
+			
+			if (GUILayout.Button("FUI代码生成"))
+			{
+				FUICodeSpawner.FUICodeSpawn();
 			}
 
 			GUILayout.Space(5);
@@ -182,8 +188,8 @@ namespace ET
 			Directory.CreateDirectory(BuildAssembliesHelper.CodeDir);
 
 			// 设置ab包
-			AssetImporter assetImporter = AssetImporter.GetAtPath("Assets/Bundles/Code");
-			assetImporter.assetBundleName = "Code.unity3d";
+			// AssetImporter assetImporter = AssetImporter.GetAtPath("Assets/Bundles/Code");
+			// assetImporter.assetBundleName = "Code.unity3d";
 			AssetDatabase.SaveAssets();
 			AssetDatabase.Refresh();
             

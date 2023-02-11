@@ -9,7 +9,7 @@ namespace ET
 	{
 		private void Start()
 		{
-			DontDestroyOnLoad(gameObject);
+			// DontDestroyOnLoad(gameObject);
 			
 			AppDomain.CurrentDomain.UnhandledException += (sender, e) =>
 			{

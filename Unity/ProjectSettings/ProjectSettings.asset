@@ -737,7 +737,6 @@ PlayerSettings:
   switchNetworkInterfaceManagerInitializeEnabled: 1
   switchPlayerConnectionEnabled: 1
   switchUseNewStyleFilepaths: 0
-  switchUseLegacyFmodPriorities: 1
   switchUseMicroSleepForYield: 1
   switchEnableRamDiskSupport: 0
   switchMicroSleepForYieldTime: 25
@@ -839,11 +838,12 @@ PlayerSettings:
   webGLDecompressionFallback: 0
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Android: NETSTANDARD2_0;UNITY
+    Android: NETSTANDARD2_0;UNITY;ENABLE_LOG
     Server: NETSTANDARD2_0;UNITY
-    Standalone: NETSTANDARD2_0;UNITY
-    WebGL: NETSTANDARD2_0;UNITY
-    iPhone: NETSTANDARD2_0;UNITY
+    Standalone: NETSTANDARD2_0;UNITY;ENABLE_LOG;ENABLE_VIEW
+    WebGL: NETSTANDARD2_0;UNITY;ENABLE_LOG
+    Windows Store Apps: ENABLE_LOG
+    iPhone: NETSTANDARD2_0;UNITY;ENABLE_LOG
   additionalCompilerArguments: {}
   platformArchitecture:
     iPhone: 1

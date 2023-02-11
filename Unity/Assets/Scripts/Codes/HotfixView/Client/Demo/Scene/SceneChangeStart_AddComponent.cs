@@ -1,3 +1,6 @@
+using System;
+using UGFExtensions;
+using UGFExtensions.Await;
 using UnityEngine.SceneManagement;
 
 namespace ET.Client
@@ -9,14 +12,43 @@ namespace ET.Client
         {
             Scene currentScene = scene.CurrentScene();
             
-            // 加载场景资源
-            await ResourcesComponent.Instance.LoadBundleAsync($"{currentScene.Name}.unity3d");
-            // 切换到map场景
+            string currentSceneName = currentScene.Name;
+            
+            string[] loadedSceneAssetNames = GameEntrys.Scene.GetLoadedSceneAssetNames();
+            if (Array.Exists(loadedSceneAssetNames,x=>x==currentSceneName))
+            {
+                Log.Debug("在当前场景，不需要切换！");
+                return;
+            }
+            
+            // 停止所有声音
+            GameEntrys.Sound.StopAllLoadingSounds();
+            GameEntrys.Sound.StopAllLoadedSounds();
 
-            await SceneManager.LoadSceneAsync(currentScene.Name);
-			
+            // 隐藏所有实体
+            GameEntrys.Entity.HideAllLoadingEntities();
+            GameEntrys.Entity.HideAllLoadedEntities();
 
-            currentScene.AddComponent<OperaComponent>();
+            // 卸载所有场景
+            
+            for (int i = 0; i < loadedSceneAssetNames.Length; i++)
+            {
+                GameEntrys.Scene.UnloadScene(loadedSceneAssetNames[i]);
+            }
+
+            // 还原游戏速度
+            GameEntrys.Base.ResetNormalGameSpeed();
+            
+            // 切换场景
+            bool loadSceneAsync = await GameEntrys.Scene.LoadSceneAsync($"Assets/Bundles/Scenes/{currentSceneName}.unity");
+            if (loadSceneAsync)
+            {
+                currentScene.AddComponent<OperaComponent>();
+            }
+            else
+            {
+                Log.Error("切换场景失败！");
+            }
         }
     }
 }

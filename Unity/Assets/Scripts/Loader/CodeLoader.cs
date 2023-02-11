@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
+using UGFExtensions;
 using UnityEngine;
 
 namespace ET
@@ -9,7 +10,8 @@ namespace ET
 	public class CodeLoader: Singleton<CodeLoader>
 	{
 		private Assembly model;
-
+		const string Code_Prefix = "Assets/Bundles/Code";
+		
 		public void Start()
 		{
 			if (Define.EnableCodes)
@@ -38,9 +40,8 @@ namespace ET
 				byte[] pdbBytes;
 				if (!Define.IsEditor)
 				{
-					Dictionary<string, UnityEngine.Object> dictionary = AssetsBundleHelper.LoadBundle("code.unity3d");
-					assBytes = ((TextAsset)dictionary["Model.dll"]).bytes;
-					pdbBytes = ((TextAsset)dictionary["Model.pdb"]).bytes;
+					assBytes = GameEntrys.Resource.LoadBinaryFromFileSystem($"{Code_Prefix}/Model.dll.bytes");
+					pdbBytes = GameEntrys.Resource.LoadBinaryFromFileSystem($"{Code_Prefix}/Model.pdb.bytes");
 
 					if (Define.EnableIL2CPP)
 					{
@@ -49,8 +50,8 @@ namespace ET
 				}
 				else
 				{
-					assBytes = File.ReadAllBytes(Path.Combine(Define.BuildOutputDir, "Model.dll"));
-					pdbBytes = File.ReadAllBytes(Path.Combine(Define.BuildOutputDir, "Model.pdb"));
+					assBytes = GameEntrys.Resource.LoadBinaryFromFileSystem($"{Code_Prefix}/Model.dll.bytes");
+					pdbBytes = GameEntrys.Resource.LoadBinaryFromFileSystem($"{Code_Prefix}/Model.pdb.bytes");
 				}
 			
 				this.model = Assembly.Load(assBytes, pdbBytes);
@@ -68,9 +69,8 @@ namespace ET
 			byte[] pdbBytes;
 			if (!Define.IsEditor)
 			{
-				Dictionary<string, UnityEngine.Object> dictionary = AssetsBundleHelper.LoadBundle("code.unity3d");
-				assBytes = ((TextAsset)dictionary["Hotfix.dll"]).bytes;
-				pdbBytes = ((TextAsset)dictionary["Hotfix.pdb"]).bytes;
+				assBytes = GameEntrys.Resource.LoadBinaryFromFileSystem($"{Code_Prefix}/Hotfix.dll.bytes");
+				pdbBytes = GameEntrys.Resource.LoadBinaryFromFileSystem($"{Code_Prefix}/Hotfix.pdb.bytes");
 			}
 			else
 			{

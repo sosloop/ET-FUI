@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1136,640">
+  <displayList>
+    <component id="n2_98vk" name="n2" src="98vk2" fileName="mask/MaskBg.xml" xy="568,320" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,middle-middle"/>
+    </component>
+    <text id="n4_98vk" name="title" xy="567,135" pivot="0.5,0.5" anchor="true" size="223,49" fontSize="36" color="#ffffff" text="标题1233333">
+      <relation target="" sidePair="center-center,top-top"/>
+    </text>
+    <component id="n5_98vk" name="progress" src="98vk3" fileName="comp/ProgressBar1.xml" xy="568,527" pivot="0.5,0.5" anchor="true">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+      <ProgressBar max="100"/>
+    </component>
+    <text id="n6_98vk" name="info" xy="568,494" pivot="0.5,0.5" anchor="true" size="150,34" fontSize="24" color="#ffffff" text="标题1233333">
+      <relation target="" sidePair="center-center,bottom-bottom"/>
+    </text>
+  </displayList>
+</component>

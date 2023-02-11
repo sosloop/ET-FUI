@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using HybridCLR;
+using UGFExtensions;
 using UnityEngine;
 
 namespace ET
@@ -8,10 +9,24 @@ namespace ET
     {
         public static void Load()
         {
-            Dictionary<string, UnityEngine.Object> dictionary = AssetsBundleHelper.LoadBundle("aotdlls.unity3d");
-            foreach (var kv in dictionary)
+            string AOTCode_Prefix = "Assets/Bundles/AOTCode";
+            
+            List<string> AOTMetaAssemblyNames = new List<string>()
             {
-                byte[] bytes = (kv.Value as TextAsset).bytes;
+                "CommandLine.dll.bytes",
+                "MongoDB.Bson.dll.bytes",
+                "mscorlib.dll.bytes",
+                "NLog.dll.bytes",
+                "System.Core.dll.bytes",
+                "System.dll.bytes",
+                "Unity.Core.dll.bytes",
+                "Unity.Loader.dll.bytes",
+                "Unity.ThirdParty.dll.bytes",
+            };
+
+            foreach (string aotDll in AOTMetaAssemblyNames)
+            {
+                byte[] bytes = GameEntrys.Resource.LoadBinaryFromFileSystem($"{AOTCode_Prefix}/{aotDll}");
                 RuntimeApi.LoadMetadataForAOTAssembly(bytes, HomologousImageMode.Consistent);
             }
         }

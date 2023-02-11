@@ -1,0 +1,14 @@
+{
+  "scaleMode": "ScaleWithScreenSize",
+  "screenMathMode": "MatchWidthOrHeight",
+  "designResolutionX": 1136,
+  "designResolutionY": 640,
+  "devices": [
+    {
+      "name": "sunsung z flip",
+      "resolutionX": 2636,
+      "resolutionY": 1080
+    }
+  ],
+  "fileName": "Adaptation"
+}

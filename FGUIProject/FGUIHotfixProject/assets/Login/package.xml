@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="9yz3lpik">
+  <resources>
+    <component id="zcih0" name="LoginPanel.xml" path="/" exported="true"/>
+    <component id="zcih1" name="MaskBg.xml" path="/mask/"/>
+    <component id="zcih2" name="MaskTransparentBg.xml" path="/mask/"/>
+    <component id="zcih3" name="Button1.xml" path="/comp/"/>
+    <component id="zcih5" name="ComboBox1_item.xml" path="/comp/"/>
+    <component id="zcih6" name="ComboBox1_popup.xml" path="/comp/"/>
+    <component id="zcih7" name="ComboBox1.xml" path="/comp/" exported="true"/>
+    <image id="nlxj8" name="tipbg.png" path="/image/" exported="true"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>
