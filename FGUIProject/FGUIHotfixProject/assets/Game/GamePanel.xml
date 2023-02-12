@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="1136,640">
+  <displayList>
+    <component id="n0_dnpj" name="transmit1" src="zcih3" fileName="comp/Button1.xml" pkg="sgg4y63l" xy="162,116" pivot="0.5,0.5" size="108,39">
+      <relation target="" sidePair="left-left,top-top"/>
+      <Button title="传送1"/>
+    </component>
+    <component id="n1_dnpj" name="transmit2" src="zcih3" fileName="comp/Button1.xml" pkg="sgg4y63l" xy="162,169" pivot="0.5,0.5" size="108,39">
+      <relation target="" sidePair="left-left,top-top"/>
+      <Button title="传送2"/>
+    </component>
+  </displayList>
+</component>

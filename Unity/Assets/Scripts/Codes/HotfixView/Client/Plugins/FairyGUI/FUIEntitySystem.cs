@@ -11,6 +11,23 @@ namespace ET.Client
         }
     }
 
+    [ObjectSystem]
+    public class FUIEntityDestroySystem: DestroySystem<FUIEntity>
+    {
+        protected override void Destroy(FUIEntity self)
+        {
+            self.GComponent?.Dispose();
+            self.NetLoading?.Dispose();
+            self.PanelCoreData?.Dispose();
+
+            self.GComponent = null;
+            self.NetLoading = null;
+            self.PanelCoreData = null;
+            
+            self.PanelId = PanelId.Invalid;
+        }
+    }
+
     public static class FUIEntitySystem
     {
         public static void SetRoot(this FUIEntity self, GComponent rootGComponent)

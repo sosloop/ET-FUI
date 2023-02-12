@@ -10,6 +10,7 @@
     <component id="98vk7" name="NetLoadingUI.xml" path="/" exported="true"/>
     <component id="98vk9" name="GlobalModalWaiting.xml" path="/wait/"/>
     <image id="98vka" name="icon_zzz.png" path="/wait/"/>
+    <component id="tmmlc" name="SetServer.xml" path="/comp/"/>
   </resources>
   <publish name="" genCode="true"/>
 </packageDescription>

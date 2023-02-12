@@ -37,8 +37,9 @@ namespace ET.Client
                     new C2G_LoginGate() { Key = r2CLogin.Key, GateId = r2CLogin.GateId});
 
                 Log.Debug("登陆gate成功!");
-
-                await EventSystem.Instance.PublishAsync(clientScene, new EventType.LoginFinish());
+                
+                await EnterMapHelper.EnterMapAsync(clientScene);
+                
             }
             catch (Exception e)
             {

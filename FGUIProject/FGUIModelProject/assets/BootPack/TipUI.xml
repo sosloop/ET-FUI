@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1136,640">
   <controller name="show" exported="true" pages="0,one,1,two" selected="0"/>
+  <controller name="seturl" pages="0,hide,1,show" selected="0"/>
   <displayList>
     <component id="n7_98vk" name="n7" src="98vk4" fileName="mask/MaskTransparentBg.xml" xy="568,320" pivot="0.5,0.5" anchor="true">
       <relation target="" sidePair="center-center,middle-middle"/>
@@ -8,21 +9,24 @@
     <graph id="n8_98vk" name="bg" xy="568,320" pivot="0.5,0.5" anchor="true" size="700,500" type="rect" lineSize="3">
       <relation target="" sidePair="center-center,middle-middle"/>
     </graph>
-    <text id="n4_98vk" name="title" xy="567,134" pivot="0.5,0.5" anchor="true" size="580,49" group="n12_98vk" fontSize="36" color="#333333" align="center" vAlign="middle" autoSize="none" text="标题12333"/>
-    <text id="n9_98vk" name="content" xy="568,292" pivot="0.5,0.5" anchor="true" size="580,229" group="n12_98vk" fontSize="28" color="#333333" align="center" vAlign="middle" autoSize="none" text="内容1233333"/>
-    <component id="n10_98vk" name="no" src="98vk6" fileName="comp/Button1.xml" xy="395,493" pivot="0.5,0.5" anchor="true" group="n12_98vk">
+    <text id="n4_98vk" name="title" xy="567,133" pivot="0.5,0.5" anchor="true" size="580,49" group="n12_98vk" fontSize="36" color="#333333" align="center" vAlign="middle" autoSize="none" text="标题12333"/>
+    <text id="n9_98vk" name="content" xy="568,291" pivot="0.5,0.5" anchor="true" size="580,229" group="n12_98vk" fontSize="28" color="#333333" align="center" vAlign="middle" autoSize="none" text="内容1233333"/>
+    <component id="n10_98vk" name="no" src="98vk6" fileName="comp/Button1.xml" xy="395,492" pivot="0.5,0.5" anchor="true" group="n12_98vk">
       <gearDisplay controller="show" pages="1"/>
       <Button title="取消" titleFontSize="32"/>
     </component>
-    <component id="n11_98vk" name="ok" src="98vk6" fileName="comp/Button1.xml" xy="751,493" pivot="0.5,0.5" anchor="true" group="n12_98vk">
+    <component id="n11_98vk" name="ok" src="98vk6" fileName="comp/Button1.xml" xy="751,492" pivot="0.5,0.5" anchor="true" group="n12_98vk">
       <gearDisplay controller="show" pages="1"/>
       <Button title="确认" titleFontSize="32"/>
     </component>
-    <component id="n13_98vk" name="yes" src="98vk6" fileName="comp/Button1.xml" xy="568,493" pivot="0.5,0.5" anchor="true" group="n12_98vk">
+    <component id="n13_98vk" name="yes" src="98vk6" fileName="comp/Button1.xml" xy="568,492" pivot="0.5,0.5" anchor="true" group="n12_98vk">
       <gearDisplay controller="show" pages="0"/>
       <Button title="确认" titleFontSize="32"/>
     </component>
-    <group id="n12_98vk" name="n12" xy="277,110" size="581,433" advanced="true">
+    <component id="n14_tmml" name="server" src="tmmlc" fileName="comp/SetServer.xml" xy="575,368" pivot="0.5,0.5" anchor="true" group="n12_98vk">
+      <gearDisplay controller="seturl" pages="1"/>
+    </component>
+    <group id="n12_98vk" name="n12" xy="277,109" size="581,433" advanced="true">
       <relation target="n8_98vk" sidePair="center-center,middle-middle"/>
     </group>
   </displayList>

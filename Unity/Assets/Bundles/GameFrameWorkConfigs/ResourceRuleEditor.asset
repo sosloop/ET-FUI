@@ -63,3 +63,23 @@ MonoBehaviour:
     packed: 1
     filterType: 3
     searchPatterns: '*.png'
+  - valid: 1
+    name: 
+    variant: 
+    fileSystem: 
+    groups: 
+    assetsDirectoryPath: Assets/Bundles/Scenes
+    loadType: 0
+    packed: 1
+    filterType: 0
+    searchPatterns: '*.*'
+  - valid: 1
+    name: 
+    variant: 
+    fileSystem: 
+    groups: 
+    assetsDirectoryPath: Assets/Bundles/Unit
+    loadType: 0
+    packed: 1
+    filterType: 0
+    searchPatterns: '*.*'

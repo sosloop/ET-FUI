@@ -12,9 +12,9 @@ namespace UGFExtensions
     public class BuiltinDataComponent : GameFrameworkComponent
     {
 #if UNITY_ANDROID || UNITY_IOS
-        public const string UpdateUrl = "https://tt.corki.cn/AB";
+        public static string UpdateUrl = "https://tt.corki.cn/AB";
 #else
-        public const string UpdateUrl = "http://127.0.0.1:8088/AB";
+        public static string UpdateUrl = "http://127.0.0.1:8088/AB";
 #endif
 
         [SerializeField]
@@ -74,11 +74,19 @@ namespace UGFExtensions
             this.FUIBootUI.SetProgress(0,"");
         }
 
-        public void ShowTip(string title,string content,Action action)
+        public void ShowTip(string title,string content,Action okAction, bool showUrl = false)
         {
             FUI_TipUI fuiTipUI = FUI_TipUI.CreateInstance();
             fuiTipUI.MakeFullScreen();
-            fuiTipUI.ShowTip(title,content,action);
+            fuiTipUI.ShowTip(title,content,okAction,showUrl);
+            this.FUIBootUI.AddChild(fuiTipUI);
+        }
+        
+        public void ShowTip(string title,string content,Action okAction,Action noAction, bool showUrl = false)
+        {
+            FUI_TipUI fuiTipUI = FUI_TipUI.CreateInstance();
+            fuiTipUI.MakeFullScreen();
+            fuiTipUI.ShowTip(title,content,okAction,noAction,showUrl);
             this.FUIBootUI.AddChild(fuiTipUI);
         }
 

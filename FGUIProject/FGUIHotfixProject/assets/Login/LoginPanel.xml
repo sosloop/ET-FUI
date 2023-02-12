@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component size="1136,640">
   <displayList>
-    <component id="n7_zcih" name="n7" src="zcih1" fileName="mask/MaskBg.xml" xy="-217,-110">
+    <component id="n7_zcih" name="n7" src="zcih1" fileName="mask/MaskBg.xml" pkg="sgg4y63l" xy="-217,-110">
       <relation target="" sidePair="center-center,middle-middle"/>
     </component>
     <image id="n17_nlxj" name="n17" src="nlxj8" fileName="image/tipbg.png" xy="567,319" pivot="0.5,0.5" anchor="true" scale="1.5,1.5">
@@ -22,11 +22,11 @@
     <component id="n16_zcih" name="servers" src="zcih7" fileName="comp/ComboBox1.xml" xy="268,110">
       <relation target="" sidePair="center-center,middle-middle"/>
       <ComboBox title="选择服务器地址" visibleItemCount="10">
-        <item title="127.0.0.1"/>
-        <item title="192.168.50.9"/>
+        <item title="127.0.0.1:202201"/>
+        <item title="192.168.50.9:202201"/>
       </ComboBox>
     </component>
-    <component id="n8_zcih" name="login" src="zcih3" fileName="comp/Button1.xml" xy="367,470" size="400,70">
+    <component id="n8_zcih" name="login" src="zcih3" fileName="comp/Button1.xml" xy="367,470" size="400,70" pkg="sgg4y63l">
       <relation target="" sidePair="center-center,middle-middle"/>
       <Button title="登录" titleFontSize="32"/>
     </component>

@@ -169,7 +169,7 @@ namespace UGFExtensions
 
             Log.Warning("Check version failure, error message is '{0}'.", ne.ErrorMessage);
 
-            GameEntrys.BuiltinData.ShowTip("网络错误","请求失败，请检查你的网络连接再次重试！", RequestHttpJson);
+            GameEntrys.BuiltinData.ShowTip("网络错误","请求失败，请检查你的网络连接再次重试！", RequestHttpJson,true);
         }
 
         private string GetPlatformPath()

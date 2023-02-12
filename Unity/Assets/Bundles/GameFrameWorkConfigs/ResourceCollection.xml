@@ -5,11 +5,16 @@
       <Resource Name="Bundles/AotDlls" FileSystem="boot" LoadType="4" Packed="True" ResourceGroups="b1" />
       <Resource Name="Bundles/Code" FileSystem="boot" LoadType="4" Packed="True" ResourceGroups="b1" />
       <Resource Name="Bundles/Config" FileSystem="boot" LoadType="4" Packed="True" ResourceGroups="b1" />
+      <Resource Name="Bundles/Scenes" LoadType="0" Packed="True" />
+      <Resource Name="Bundles/Unit" LoadType="0" Packed="True" />
     </Resources>
     <Assets>
+      <Asset Guid="064123f1e5067b249a9fd8967ddbde09" ResourceName="Bundles/Scenes" />
       <Asset Guid="277d58db3067742a7b32f9994984b3bc" ResourceName="Bundles/Config" />
       <Asset Guid="8092bee8b875d5f448e05efd32b87759" ResourceName="Bundles/Code" />
+      <Asset Guid="a5294483f20f40d449699101bb428cda" ResourceName="Bundles/Scenes" />
       <Asset Guid="c7d4b75260b3ff84baef9e04e8320a94" ResourceName="Bundles/AotDlls" />
+      <Asset Guid="cfaf4529ce2243c4c85126e9d008897b" ResourceName="Bundles/Unit" />
     </Assets>
   </ResourceCollection>
 </UnityGameFramework>

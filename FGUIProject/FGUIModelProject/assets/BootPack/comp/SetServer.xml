@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<component size="525,58">
+  <displayList>
+    <graph id="n7_tmml" name="n7" xy="207,29" pivot="0.5,0.5" anchor="true" size="414,56" type="rect"/>
+    <text id="n8_tmml" name="server" xy="207,29" pivot="0.5,0.5" anchor="true" size="414,56" fontSize="24" vAlign="middle" autoSize="none" singleLine="true" text="" input="true" prompt="完整url"/>
+    <component id="n9_tmml" name="set" src="98vk6" fileName="comp/Button1.xml" xy="470,29" pivot="0.5,0.5" anchor="true" size="96,52">
+      <Button title="设置"/>
+    </component>
+  </displayList>
+</component>

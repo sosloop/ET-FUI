@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using ET.Client.BootPack;
 using FairyGUI;
 
 namespace ET.Client
@@ -245,6 +246,33 @@ namespace ET.Client
         }
 
         #endregion
+
+        #region Loading
+
+        public static void ShowNetLoading(this FUIEntity self)
+        {
+            if (self.NetLoading != null)
+            {
+                self.GComponent.SetChildIndex(self.NetLoading,self.GComponent.numChildren);
+                self.NetLoading.visible = true;
+                return;
+            }
+            FUI_NetLoadingUI fuiNetLoadingUI = FUI_NetLoadingUI.CreateInstance();
+            fuiNetLoadingUI.MakeFullScreen();
+            self.GComponent.AddChild(fuiNetLoadingUI);
+
+            self.NetLoading = fuiNetLoadingUI;
+        }
         
+        public static void HideNetLoading(this FUIEntity self)
+        {
+            if (self.NetLoading != null)
+            {
+                self.NetLoading.visible = false;
+            }
+        }
+
+
+        #endregion
     }
 }

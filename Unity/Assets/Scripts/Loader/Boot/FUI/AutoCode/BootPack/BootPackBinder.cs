@@ -14,6 +14,7 @@ namespace ET.Client.BootPack
             UIObjectFactory.SetPackageItemExtension(FUI_TipUI.URL, typeof(FUI_TipUI));
             UIObjectFactory.SetPackageItemExtension(FUI_NetLoadingUI.URL, typeof(FUI_NetLoadingUI));
             UIObjectFactory.SetPackageItemExtension(FUI_GlobalModalWaiting.URL, typeof(FUI_GlobalModalWaiting));
+            UIObjectFactory.SetPackageItemExtension(FUI_SetServer.URL, typeof(FUI_SetServer));
         }
     }
 }

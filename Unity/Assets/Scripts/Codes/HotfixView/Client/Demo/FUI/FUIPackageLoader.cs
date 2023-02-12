@@ -8,11 +8,15 @@ namespace ET.Client
 		{
 			using (ListComponent<ETTask> tasks = ListComponent<ETTask>.Create())
 			{
+				tasks.Add(fuiComponent.AddPackageAsync("Comm"));
+				tasks.Add(fuiComponent.AddPackageAsync("Game"));
 				tasks.Add(fuiComponent.AddPackageAsync("Login"));
 
 				await ETTaskHelper.WaitAll(tasks);
 			}
 
+			CommBinder.BindAll();
+			GameBinder.BindAll();
 			LoginBinder.BindAll();
 		}
 	}

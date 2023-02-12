@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<packageDescription id="sgg4y63l">
+  <resources>
+    <component id="zcih1" name="MaskBg.xml" path="/mask/" exported="true"/>
+    <component id="zcih2" name="MaskTransparentBg.xml" path="/mask/" exported="true"/>
+    <component id="zcih3" name="Button1.xml" path="/comp/" exported="true"/>
+  </resources>
+  <publish name=""/>
+</packageDescription>
